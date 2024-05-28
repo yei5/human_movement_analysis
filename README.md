@@ -1,10 +1,8 @@
-
-![Proyecto I de innovación Tecnológica en Inteligencia Artificial (4)](https://github.com/MIA-PID/projectTemplate/assets/16925921/2ff335c7-65a6-4b2b-9eae-3612b8d64e93)
 ____________________________________________________________________________________
 
 
 # Project Template
-This is the template for the capstone project course called **Proyecto 1 de Innovación Tecnológica** in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia
+This is the template for the ETL assignment in the IFRATI 2024-1 court at the Data Science Master, Universidad Icesi, Cali Colombia
 
 This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
 
