@@ -2,7 +2,7 @@ ________________________________________________________________________________
 
 
 # Project Template
-This is the template for the ETL assignment in the IFRATI 2024-1 court at the Data Science Master, Universidad Icesi, Cali Colombia
+This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
 
 This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
 
