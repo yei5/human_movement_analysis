@@ -1,3 +1,7 @@
+
+```markdown
+```
+
 📦 nombre-del-proyecto/
 │
 ├── 📂 docs/                   # Documentación del proyecto
@@ -35,3 +39,6 @@
 ├── 📜 .gitignore              # Archivos a ignorar en git
 ├── 📜 LICENSE                 # Licencia del proyecto
 └── 📜 README.md               # Descripción principal del proyecto
+
+```
+```
