@@ -1,4 +1,4 @@
-# **Introducción: Estructura de Repositorio para Entregas**
+# **Estructura de Repositorio para Entregas**
 A medida que avancemos en el curso, la organización será tan importante como el código que escriban. Para garantizar que todos los proyectos sean fáciles de revisar, entender y replicar, usaremos una estructura de repositorio estandarizada para cada entrega.
 
 ### La Regla de Oro: Claridad y Reproducibilidad
