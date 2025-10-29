@@ -1,62 +1,34 @@
-____________________________________________________________________________________
+# Human activity recognition
+This project is a part of the  **Inteligencia artificial I** course in the Software engineering, Universidad Icesi, Cali Colombia. 
 
-
-# Project Template
-This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
-
-This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
-
-*Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
-____________________________________________________________________________________
-
-# Project Name
-This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
-
-#### -- Project Status: [Active, On-Hold, Completed]
+#### Project status: Active
 
 ## Contributing Members
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
+**Team Leader: Yeison Antonio Rodriguez [github](https://github.com/yei5)**
 
-#### Other Members:
-
-|Name     |  Email   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+**Instructor: Milton Sarria [github](https://github.com/miltonsarria)**
 
 ## Contact
 * Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
 
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
-
-### Partner
-This section should be added when there's a partner institution 
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+The purpose of this project is to develop a tool that can analyze human movement in real time and automatically classify specific actions such as walking, turning, sitting, and standing up.
+Using MediaPipe Pose for landmark detection, the system will extract numerical features (angles, inclinations, velocities) and feed them into a supervised learning model (SVM, Random Forest, or XGBoost).
+The project aims to support applications in health monitoring, workplace safety, and posture assessment through an accessible and interpretable AI solution.
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+* Data Collection and Annotation
+* Feature Extraction from Pose Landmarks
+* Machine Learning (SVM, Random Forest, XGBoost)
+* Data Preprocessing and Normalization
+* Model Evaluation (Accuracy, Precision, Recall, F1-score)
+* Data Visualization (Confusion Matrices, ROC Curves)
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+* Github
 
 ## Project Description
 (Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
