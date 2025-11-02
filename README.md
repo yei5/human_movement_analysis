@@ -36,16 +36,9 @@ The project aims to support applications in health monitoring, workplace safety,
 ## Getting Started
 Instructions for contributors
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how contributors may obtain the data )*
+2. Raw Data is being kept offline, if you need access to it please contact the team leader.
     
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-
-5. Follow setup [instructions](Link to file)
+3. Data processing/transformation scripts are being kept [here](entrega1/src/data/). Processed data is stored in the entrega1/data/processed/landmarks/ folder. All the scripts need to be run from the root folder
 
 ## Featured Notebooks/Analysis/Deliverables
 * [Notebook/Markdown/Slide Deck Title](link)
