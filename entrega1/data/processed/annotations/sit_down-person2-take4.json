@@ -1,0 +1,10 @@
+[
+  {
+    "activity": "sit_down",
+    "start_frame": 0,
+    "start_time": 0.0,
+    "end_frame": 79,
+    "end_time": 2.6666666666666665,
+    "method": "automatic_filename"
+  }
+]

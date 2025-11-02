@@ -3,8 +3,8 @@
     "activity": "turn_around",
     "start_frame": 0,
     "start_time": 0.0,
-    "end_frame": 67,
-    "end_time": 2.2666666666666666,
+    "end_frame": 130,
+    "end_time": 4.366666666666666,
     "method": "automatic_filename"
   }
 ]

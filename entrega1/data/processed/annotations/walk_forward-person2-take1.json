@@ -3,8 +3,8 @@
     "activity": "walk_forward",
     "start_frame": 0,
     "start_time": 0.0,
-    "end_frame": 185,
-    "end_time": 6.2,
+    "end_frame": 70,
+    "end_time": 2.3666666666666667,
     "method": "automatic_filename"
   }
 ]

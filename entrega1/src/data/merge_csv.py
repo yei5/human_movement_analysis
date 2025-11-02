@@ -4,8 +4,8 @@ import pandas as pd
 def merge_csvs(csv_dir, output_path):
     all_data = []
     for fname in os.listdir(csv_dir):
-        if fname.endswith(".csv"):
-            activity = fname.split("-")[0]  # "walk_forward-person1-take1.csv" → "walk_forward"
+        if fname.endswith(".csv") and fname != "merged_dataset.csv":
+            activity = fname.split("-")[0] if "-" in fname else os.path.splitext(fname)[0]
             df = pd.read_csv(os.path.join(csv_dir, fname))
             df["activity"] = activity
             df["source_file"] = fname
@@ -17,6 +17,6 @@ def merge_csvs(csv_dir, output_path):
 
 if __name__ == "__main__":
     merge_csvs(
-        "data/processed/landmarks/",
-        "data/processed/landmarks/merged_dataset.csv"
+        "entrega1/data/processed/landmarks/",
+        "entrega1/data/processed/landmarks/merged_dataset.csv"
     )

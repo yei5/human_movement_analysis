@@ -30,8 +30,8 @@ def generate_annotation(video_path, output_path):
     print(f"Annotated {video_path} → {output_path}")
 
 if __name__ == "__main__":
-    input_dir = "data/raw_videos/"
-    output_dir = "data/processed/annotations/"
+    input_dir = "entrega1/data/raw_videos/"
+    output_dir = "entrega1/data/processed/annotations/"
     os.makedirs(output_dir, exist_ok=True)
 
     for fname in os.listdir(input_dir):

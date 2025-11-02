@@ -22,7 +22,7 @@ Sub-questions include:
 * Which machine learning algorithms (e.g., SVM, Random Forest, XGBoost) are most effective for classifying human activities based on pose landmarks?
 * What features derived from pose landmarks (e.g., joint angles, relative distances) contribute most to accurate activity recognition?
 
-1. **Problem type**
+4. **Problem type**
 
 This is a supervised multi-class classification problem where the goal is to classify human activities into one of the predefined categories based on the features extracted from pose estimation data.
 The model will learn from labeled samples of human movements and predict activity labels for unseen sequences.
@@ -65,7 +65,7 @@ The project will follow an adapted CRISP-DM (Cross-Industry Standard Process for
     - Ensure the application is user-friendly and provides accurate activity recognition results.
     - Monitor the system's performance and make necessary updates based on user feedback and new data.
 
-5. **Evaluation metrics**
+6. **Evaluation metrics**
 
 The performance of the machine learning models will be evaluated using the following metrics:
 
@@ -76,15 +76,15 @@ The performance of the machine learning models will be evaluated using the follo
 * Confusion Matrix: A table that summarizes the performance of the classification model by showing the true positive, true negative, false positive, and false negative predictions for each class.
 * ROC Curve: A graphical representation of the model's performance across different classification thresholds, illustrating the trade-off between true positive rate and false positive rate.
 
-6. **Data description and exploratory analysis**
+7. **Data description and exploratory analysis**
 
 The dataset for this project consists of video recordings of individuals performing five distinct human activities: walking towards the camera, walking away from the camera, turning around, sitting down, and standing up. The videos were captured in various environments and lighting conditions to ensure diversity and robustness in the data.
 
-This videos were collected from a group of volunteers who consented to participate in the study. Each participant was recorded performing the activities multiple times to capture variations in movement patterns. The recordings were made using standard video cameras, ensuring that the data collection process was non-intrusive and respectful of participants' privacy. The videos will not be shared or published, and raw data video files will be kept offline to protect the privacy of individuals.
+This videos were collected from 2 volunteers who consented to participate in the study. Each participant was recorded performing the activities multiple times to capture variations in movement patterns. The recordings were made using standard video cameras, ensuring that the data collection process was non-intrusive and respectful of participants' privacy. The videos will not be shared or published, and raw data video files will be kept offline to protect the privacy of individuals.
 
 The videos were processed using the MediaPipe Pose estimation framework to extract 66 key body landmarks for each frame. These landmarks include critical points such as the nose, eyes, shoulders, elbows, wrists, hips, knees, and ankles. The extracted landmarks provide a comprehensive representation of human posture and movement.
 
-The exploratory data analysis indicates that the dataset includes 866 frames with 60 extracted features representing pose landmarks, biomechanical metrics, and derived measures. The five activities (walk_forward, walk_back, turn_around, sit_down, and stand_up) are balanced enough for model training, though walking actions dominate, with approximately 31% walk_forward and 30% walk_back. This suggests that the dataset is representative but slightly skewed toward locomotion actions, which can influence model bias toward those classes.
+The exploratory data analysis indicates that the dataset includes 4143 frames with 60 extracted features representing pose landmarks, biomechanical metrics, and derived measures. The five activities (walk_forward, walk_back, turn_around, sit_down, and stand_up) are balanced enough for model training, though walking actions dominate, with approximately 24% walk_back and 22% walk_forward. This suggests that the dataset is representative but slightly skewed toward locomotion actions, which can influence model bias toward those classes. However, the amount of videos per activity is the same it's their length what changes
 
 No missing values were detected, confirming that the preprocessing and landmark extraction steps were performed correctly. The boxplots reveal distinct distributions of biomechanical features across activities. For example, the left and right knee angles show higher mean values during turn_around and walk_back, while lower averages appear in walk_forward and sit_down. This difference supports the hypothesis that knee flexion and extension angles provide meaningful discriminative power for classifying actions involving different leg dynamics. The trunk lateral inclination shows a wide range, shifting from negative in sitting and standing to positive in walking actions, indicating changes in torso orientation and stability across activities. Person height also varies systematically, with lower average height in seated frames, confirming that the extracted features correctly reflect posture and vertical movement.
 
@@ -93,7 +93,7 @@ The correlation matrix identified multiple highly correlated variables among pos
 Overall, the analysis demonstrates that the dataset is clean, balanced enough for initial modeling, and that the biomechanical variables exhibit clear variation across activities. The next steps for the report should highlight these findings as evidence that the features are meaningful, the dataset quality is adequate, and that subsequent phases can focus on normalization, feature selection, and testing model performance on classification tasks.
 
 
-1. **Ethical considerations**
+8. **Ethical considerations**
 
 This project involves recording and analyzing videos of human participants, which raises issues of privacy, consent, and responsible AI use. To ensure ethical compliance, the development follows internationally recognized frameworks such as the General Data Protection Regulation (GDPR) [10] and the OECD Principles on Artificial Intelligence [11], which emphasize fairness, transparency, and accountability in data-driven systems.
 
@@ -108,7 +108,7 @@ These measures collectively ensure that the project aligns with the principles o
 * Raw data video files will be kept offline and won't be shared or published.
 * Since the data that will be used in this project focus on pose and movement, avoid collecting or storing any personally identifiable information (PII). 
 
-7. **Potential dataset expanding strategies**
+9. **Potential dataset expanding strategies**
 
 If the initial dataset is insufficient for training the selected machine learning models, some strategies to expand the dataset may include:
 
@@ -122,7 +122,7 @@ If the initial dataset is insufficient for training the selected machine learnin
 
 If any of these strategies are implemented, it will be documented in future project deliveries. This is just a proposal for the first delivery. Additionally, the feasibility and effectiveness of these strategies will be evaluated based on the project's requirements and constraints.
 
-8. **Next steps**
+10. **Next steps**
 
 The next steps for the project include:
 
@@ -135,7 +135,7 @@ The next steps for the project include:
 * Real-time application development: Finally, the project will aim to develop a real-time application that utilizes the trained model for human activity recognition from live video input.
 
 
-1. **References**
+**References**
 
 [1] M. Zeng, L. T. Nguyen, B. Yu, O. J. Mengshoel, J. Zhu, P. Wu, “Convolutional Neural Networks for Human Activity Recognition using Mobile Sensors,” Proc. 6th Int. Conf. Mobile Computing, Applications and Services, 2014.
 

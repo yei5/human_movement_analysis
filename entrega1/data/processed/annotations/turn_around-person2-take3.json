@@ -1,0 +1,10 @@
+[
+  {
+    "activity": "turn_around",
+    "start_frame": 0,
+    "start_time": 0.0,
+    "end_frame": 100,
+    "end_time": 3.3666666666666667,
+    "method": "automatic_filename"
+  }
+]

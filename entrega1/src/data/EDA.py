@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-DATA_PATH = "data/processed/landmarks/merged_dataset.csv"
+DATA_PATH = "entrega1/data/processed/landmarks/merged_dataset.csv"
 
 if not os.path.exists(DATA_PATH):
     raise FileNotFoundError(f"Dataset not found at {DATA_PATH}")
@@ -19,7 +19,7 @@ plt.title("Distribution of Activity Classes")
 plt.xlabel("Activity")
 plt.ylabel("Frame Count")
 plt.tight_layout()
-plt.savefig("docs/EDA/activity_distribution.png")
+plt.savefig("entrega1/docs/EDA/activity_distribution.png")
 plt.close()
 
 activity_rate = df["activity"].value_counts(normalize=True) * 100
@@ -42,7 +42,7 @@ for feature in key_features:
         plt.title(f"Distribution of {feature} by Activity")
         plt.xticks(rotation=30)
         plt.tight_layout()
-        plt.savefig(f"docs/EDA/{feature}_by_activity.png")
+        plt.savefig(f"entrega1/docs/EDA/{feature}_by_activity.png")
         plt.close()
 
         mean_vals = df.groupby("activity")[feature].mean().round(2)
@@ -56,7 +56,7 @@ plt.figure(figsize=(12, 8))
 sns.heatmap(corr_matrix, cmap="Reds", center=0, linewidths=0.3)
 plt.title("Correlation Matrix of Numeric Features")
 plt.tight_layout()
-plt.savefig("docs/EDA/correlation_matrix.png")
+plt.savefig("entrega1/docs/EDA/correlation_matrix.png")
 plt.close()
 
 print("\nCorrelation matrix computed and saved.")
@@ -81,7 +81,7 @@ if all(f in df.columns for f in subset_features):
                  hue="activity", diag_kind="kde", palette="husl")
     plt.suptitle("Pairwise Relationships Between Key Features", y=1.02)
     plt.tight_layout()
-    plt.savefig("docs/EDA/pairwise_features.png")
+    plt.savefig("entrega1/docs/EDA/pairwise_features.png")
     plt.close()
 
 print("* Dataset size:", len(df))

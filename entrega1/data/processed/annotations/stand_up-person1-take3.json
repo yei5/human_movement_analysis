@@ -1,0 +1,10 @@
+[
+  {
+    "activity": "stand_up",
+    "start_frame": 0,
+    "start_time": 0.0,
+    "end_frame": 53,
+    "end_time": 1.8,
+    "method": "automatic_filename"
+  }
+]
