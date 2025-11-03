@@ -10,3 +10,4 @@ joblib
 scipy
 jupyter
 notebook
+xgboost
