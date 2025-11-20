@@ -2,6 +2,9 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+import joblib
+
+
 
 # === 1. Load dataset ===
 df = pd.read_csv("entrega1/data/processed/landmarks/merged_dataset.csv")
@@ -35,6 +38,9 @@ X_scaled = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
 # === 6. Merge scaled features with label ===
 processed_df = X_scaled.copy()
 processed_df["activity"] = y
+
+joblib.dump(scaler, "entrega2/experiments/models/scaler.pkl")
+print("Scaler saved to entrega2/experiments/models/scaler.pkl")
 
 # === 7. Save processed dataset ===
 processed_df.to_csv("entrega2/data/processed/clean_landmarks.csv", index=False)
