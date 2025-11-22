@@ -1,0 +1,3 @@
+model,accuracy,n_features
+original,0.9990345160511707,41
+reduced,0.9927623642943305,31

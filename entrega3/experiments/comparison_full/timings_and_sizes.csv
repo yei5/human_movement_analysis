@@ -1,0 +1,2 @@
+orig_predict_proba_s,orig_predict_s,orig_total_inference_s,reduced_predict_proba_s,reduced_predict_s,reduced_total_inference_s,orig_per_sample_ms,reduced_per_sample_ms,reduced_train_time_s,orig_model_size_kb,reduced_model_size_kb
+0.021372318267822266,0.02287745475769043,0.044249773025512695,0.09133696556091309,0.11220908164978027,0.20354604721069336,0.05337728953620349,0.2455320231733334,0.8291118144989014,4410.322265625,8630.0634765625

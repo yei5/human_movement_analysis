@@ -42,7 +42,6 @@ The project will follow an adapted CRISP-DM (Cross-Industry Standard Process for
   - Understand the structure and format of the collected video data.
   - Explore the data to identify patterns, anomalies, and potential challenges.
   
-
 * Data preparation:
 
     - Extract pose landmarks from the video data using MediaPipe Pose.
